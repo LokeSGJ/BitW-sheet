@@ -1135,6 +1135,37 @@ const data = {
 	"crew": {
 	},
 	"playbook": {
+    "ranger": {
+      "ability": ["at_home_by_the_campfire", "beast-friend", "careful_step", "herbalist", "marksman", "patient hunter", "survivor"],
+      "base": {
+        "hunt": "2",
+        "playbook_description": "ranger_playbook_description",
+        "wreck": "1",
+      },
+      "playbookitem":[{
+        "name": "warm_cloak",
+        "numboxes": "0"
+      }{
+        "name": "bird_whistle",
+        "numboxes": "0"
+      }{
+        "bold": "1",
+        "name": "hunting_bow",
+        "numboxes": "1"
+      }{
+        "bold": "1",
+        "name": "crossbow",
+        "numboxes": "1"
+      }{
+        "bold": "1",
+        "name": "foresters_hatchet",
+        "numboxes": "1"
+      }{
+        "bold": "1",
+        "name": "cooking_kit",
+        "numboxes": "2"
+      }]
+    },
 	},
 	"factions": {
 	},
@@ -1194,7 +1225,7 @@ const data = {
 };
 /* global data, getTranslationByKey, getAttrs, setAttrs, on, getSectionIDs, generateRowID, removeRepeatingRow */
 const sheetVersion = "1.0";
-const sheetName = "Blades in the Dark";
+const sheetName = "Blades in the Wild";
 const getTranslation = (key) => (getTranslationByKey(key) || "NO_TRANSLATION_FOUND");
 /* It's necessary to include the base data at the start of the file */
 /* Translate all the data */
@@ -1509,9 +1540,9 @@ on("change:crew_type change:playbook", event => {
 			fillBaseData(data.crew[sourceName].base, crewAttributes);
 		}
 		if (event.sourceAttribute === "playbook" && sourceName in data.playbook) {
-			fillRepeatingSectionFromData("friend", data.playbook[sourceName].friend, true);
+			//fillRepeatingSectionFromData("friend", data.playbook[sourceName].friend, true);
 			fillRepeatingSectionFromData("ability", data.playbook[sourceName].ability, true);
-			fillRepeatingSectionFromData("playbookitem", data.playbook[sourceName].playbookitem, true);
+			//fillRepeatingSectionFromData("playbookitem", data.playbook[sourceName].playbookitem, true);
 			fillBaseData(data.playbook[sourceName].base, playbookAttributes);
 		}
 	});
