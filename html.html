@@ -79,29 +79,24 @@ value="16" /><input type="hidden" name="attr_crew_xp_max" value="8" />
       </select><span data-i18n="number_stress_boxes"></span>
     </label>
   </div>
-  <div class="setting-char">
-    <label>
-      <input class="checkbox squarebox" type="checkbox" name="attr_setting_extra_trauma"
-        value="1" /><span></span><span data-i18n="show_extra_trauma_box"></span>
-    </label>
-  </div>
-  <div class="setting-char">
-    <label>
-      <select name="attr_setting_extra_xp" title="Extra XP Triggers">
-        <option value="0" selected="selected">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select><span data-i18n="show_extra_xp_condition"></span>
-    </label>
-  </div>
-  <!--Old +XP trigger option
   <div class="setting-char setting-crew">
     <label>
-      <input class="checkbox squarebox" type="checkbox" name="attr_setting_extra_xp" value="1" /><span></span><span
-        data-i18n="show_extra_xp_condition"></span>
+      <input class="checkbox squarebox" type="checkbox" name="attr_setting_extra_xp1" value="1" /><span></span><span
+        data-i18n="show_extra_xp_condition1"></span>
     </label>
-  </div>-->
+  </div>
+  <div class="setting-char setting-crew">
+    <label>
+      <input class="checkbox squarebox" type="checkbox" name="attr_setting_extra_xp2" value="1" /><span></span><span
+        data-i18n="show_extra_xp_condition2"></span>
+    </label>
+  </div>
+  <div class="setting-char">
+      <label>
+        <input class="checkbox squarebox" type="checkbox" name="attr_setting_extra_trauma"
+          value="1" /><span></span><span data-i18n="show_extra_trauma_box"></span>
+      </label>
+    </div>
   <div class="setting-char setting-crew">
     <label>
       <input class="checkbox squarebox" type="checkbox" name="attr_setting_show_itemdesc" value="1"
@@ -496,23 +491,29 @@ value="16" /><input type="hidden" name="attr_crew_xp_max" value="8" />
           <li>
               <div class="auto-expand">
                   <span name="attr_xp_condition1"></span>
-                  <textarea spellcheck="false" name="attr_xp_condition1" data-i18n-placeholder="xp_specific"></textarea>
+                  <textarea spellcheck="false" name="attr_xp_condition1" data-i18n-placeholder="xp_good"></textarea>
               </div>
           </li>
           <li>
               <div class="auto-expand">
                   <span name="attr_xp_condition2"></span>
-                  <textarea spellcheck="false" name="attr_xp_condition2" data-i18n-placeholder="xp_beliefs"></textarea>
+                  <textarea spellcheck="false" name="attr_xp_condition2" data-i18n-placeholder="xp_discover"></textarea>
               </div>
           </li>
           <li>
               <div class="auto-expand">
                   <span name="attr_xp_condition3"></span>
-                  <textarea spellcheck="false" name="attr_xp_condition3" data-i18n-placeholder="xp_vice"></textarea>
+                  <textarea spellcheck="false" name="attr_xp_condition3" data-i18n-placeholder="xp_beliefs"></textarea>
               </div>
           </li>
+          <li>
+            <div class="auto-expand">
+                <span name="attr_xp_condition4"></span>
+                <textarea spellcheck="false" name="attr_xp_condition4" data-i18n-placeholder="xp_moment"></textarea>
+            </div>
+        </li>
 
-          <input class="hider" type="hidden" name="attr_setting_extra_xp1" value="1" />
+          <input class="hider" type="hidden" name="attr_setting_extra_xp1" value="0" />
           <li>
               <div class="auto-expand">
                   <span name="attr_xp_condition_extra1"></span>
@@ -520,19 +521,11 @@ value="16" /><input type="hidden" name="attr_crew_xp_max" value="8" />
               </div>
           </li>
 
-          <input class="hider" type="hidden" name="attr_setting_extra_xp2" value="1" />
+          <input class="hider" type="hidden" name="attr_setting_extra_xp2" value="0" />
           <li>
               <div class="auto-expand">
                   <span name="attr_xp_condition_extra2"></span>
                   <textarea spellcheck="false" name="attr_xp_condition_extra2" data-i18n-placeholder="xp_custom"></textarea>
-              </div>
-          </li>
-
-          <input class="hider" type="hidden" name="attr_setting_extra_xp3" value="1" />
-          <li>
-              <div class="auto-expand">
-                  <span name="attr_xp_condition_extra3"></span>
-                  <textarea spellcheck="false" name="attr_xp_condition_extra3" data-i18n-placeholder="xp_custom"></textarea>
               </div>
           </li>
       </ul>
@@ -1165,9 +1158,10 @@ const data = {
   "upgrade_23_description": "upgrade_personal_description",
   "upgrade_24_name": "mastery",
   "upgrade_24_description": "upgrade_mastery_description",
-      "xp_condition1": "xp_specific",
-  "xp_condition2": "xp_beliefs",
-  "xp_condition3": "xp_vice",
+      "xp_condition1": "xp_good",
+  "xp_condition2": "xp_discover",
+  "xp_condition3": "xp_beliefs",
+      "xp_condition4": "xp_moment",
       "xp_extra1": "xp_custom",
       "xp_extra2": "xp_custom",
       "xp_extra3": "xp_custom"
