@@ -269,7 +269,7 @@ value="16" /><input type="hidden" name="attr_crew_xp_max" value="8" />
             </label><span>—</span>
             <label class="text-button">
               <input type="checkbox" name="attr_trauma_obsessed" value="1" /><span data-i18n="obsessed"></span>
-            </label><span>—</span>
+            </label>
             <!--Trauma 4 removed
             <label class="text-button">
               <input type="checkbox" name="attr_trauma_paranoid" value="1" /><span data-i18n="paranoid"></span>
@@ -913,7 +913,7 @@ value="16" /><input type="hidden" name="attr_crew_xp_max" value="8" />
         <input type="hidden" name="attr_char_cohort_roll_formula"
           value=" {{?{@{bonusdice}|0,zerodice=[[d6]]&amp;#44; [[d6]]|1,dice=[[d6]]|2,dice=[[d6]]&amp;#44; [[d6]]|3,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|4,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|5,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|6,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|-1,zerodice=[[d6]]&amp;#44; [[d6]]|-2,zerodice=[[d6]]&amp;#44; [[d6]]|-3,zerodice=[[d6]]&amp;#44; [[d6]]}}}" />
         <div class="cohort-title flex col100 label">
-          <input class="inherit" type="text" spellcheck="false" name="attr_char_cohort_name" value="Cohort" />
+          <input class="inherit" type="text" spellcheck="false" name="attr_char_cohort_name" value="Companion" />
           <button class="inherit rollbutton" type="roll" name="roll_char_cohort_roll"
             value="&{template:bitd} {{charname=@{character_name}}} {{resist=1}} {{short=1}} {{charname=@{char_cohort_name} (^{@{char_cohort_type}}, @{char_cohort_subtype})}} {{title=^{cohort_quality}}} {{subtitle=@{char_cohort_verb}}}) @{char_cohort_roll_formula} {{charimage=@{chat_image}}}"
             data-i18n="roll-inf"></button>
