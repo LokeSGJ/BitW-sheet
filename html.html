@@ -208,7 +208,7 @@ value="16" /><input type="hidden" name="attr_crew_xp_max" value="8" />
           <textarea spellcheck="false" name="attr_vice_purveyor"></textarea>
         </div>
         <input type="hidden" name="attr_vice_purveyor" value="" />
-        <div class="text"><span class="label title" data-i18n="vice_purveyor"></span></div>
+        <div class="text"><span class="label title" data-i18n="vice_purveyor"></span><span class="uppercase info" data-i18n="vice_info"></span></div>
 
         <button class="vicebutton borderbutton" type="roll" name="roll_Vice"
           value="&{template:bitd} {{charname=@{character_name}}} {{subtitle=^{viceroll1}@{stress}&nbsp;@{setting_stress_label}^{viceroll2}}} {{vice=1}} {{title=^{vice}}} @{vice_formula} {{charimage=@{chat_image}}}"
@@ -594,8 +594,8 @@ value="16" /><input type="hidden" name="attr_crew_xp_max" value="8" />
           </fieldset>
         </div>
         <!-- Regular items-->
-        <div class="loadheader flex col100" style="margin-top: 5px">
-          <div class="label" data-i18n="supplies"></div>
+        <div class="itemheader small-margin flex col100">
+          <div class="label" data-i18n="supplies"></div><span class="italic" data-i18n="italics_dont_count"></span>
           
         </div>
         
