@@ -151,6 +151,8 @@
 	"planning_load": "Planning &amp; Load",
 	"planningdesc": "Choose a plan, provide the <strong><em>detail</em></strong>. Choose your <strong><em>load</em></strong> limit for the operation.",
 	"playbook": "playbook",
+	"playbook_ability_beast_friend": "Beast-friend",
+	"playbook_ability_beast_friend_description": "You have an animal companion. Create it as a Hunter, Scout or Mount companion. If your companion dies, you take a scar.",
 	"playbook_advancement": "Playbook Advancement",
 	"playbook_description": "A short playbook description",
 	"position": "Position",
